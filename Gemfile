@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # user authentication tool from Thoughtbot
 gem 'clearance'
+# for parsing json really fast
+gem 'oj'
 # manage environment variables
 gem "figaro"
 
@@ -34,7 +36,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  # Alert for n+1 queries
+  gem "bullet"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
@@ -42,5 +45,6 @@ end
 group :test do
   gem "factory_girl_rails", "~> 4.0"  # by Thoughtbot
   gem "json_matchers"  # by Thoughtbot
+  gem "faker"
 end
 
