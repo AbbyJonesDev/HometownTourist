@@ -45,6 +45,7 @@ end
 group :test do
   gem "factory_girl_rails", "~> 4.0"  # by Thoughtbot
   gem "json_matchers"  # by Thoughtbot
+  gem 'shoulda-matchers', '~> 3.1'  # by Thoughtob
   gem "faker"
 end
 
