@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "title": "event",
+  "description": "A tourist-worthy event",
+  "required": [
+    "name", 
+    "id", 
+    "location",
+    "lat",
+    "lon",
+    "description",
+    "website",
+    "featured_image",
+    "start_date",
+    "end_date"],
+  "properties": {
+    "name": { "type": "string"},
+    "id": {"type": "integer"},
+    "location": {"type": "string"},
+    "lat": {"type": "number"},
+    "lon": {"type": "number"},
+    "description": {"type": "string"},
+    "website": {"type": "string"},
+    "featured_image": {"type": "string"},
+    "start_date": {"type": "string"},
+    "end_date": {"type": "string"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"}
+  }
+}
